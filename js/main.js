@@ -18,17 +18,15 @@ const intvl = setInterval(() => {
   const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  // console.log(days, hours, minutes, seconds);
-
   // Display the result values
   countdown.innerHTML = `
         <div class="flex">
-            <div>${days} <span>Days</span></div>
-            <div>${hours} <span>Hours</span></div>
+            <div class="flex">${days} <span>Days</span></div>
+            <div class="flex">${hours} <span>Hours</span></div>
         </div>
         <div class="flex">
-            <div>${minutes} <span>Minutes</span></div>
-            <div>${seconds} <span>Seconds</span></div>
+            <div class="flex">${minutes} <span>Minutes</span></div>
+            <div class="flex">${seconds} <span>Seconds</span></div>
         </div>
     `;
 
